@@ -8,7 +8,7 @@ const Why = () => {
     >
       <div className="container ">
         <div className="whyContainer">
-          <h1>Why Chose Us</h1>
+          <h1>Why Choose Us</h1>
           <p>
             The web is our passion, and we're passionate about helping
             businesses reach their goals. So when you choose Universo Magnanimo

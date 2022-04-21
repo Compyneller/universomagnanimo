@@ -17,7 +17,12 @@ const NavBar = () => {
             toggle ? style.LinksActive : style.Link
           }`}
         >
-          <Link to="/aboutus">About Us</Link>
+          <Link to="/" onClick={() => setToggle(false)}>
+            Home
+          </Link>
+          <Link to="/aboutus" onClick={() => setToggle(false)}>
+            About Us
+          </Link>
           <Link onClick={() => setToggle(false)} to="/services">
             Services
           </Link>

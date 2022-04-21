@@ -15,7 +15,7 @@ const Home = () => {
       <Section1 />
       <OurServices />
       <Why />
-      <Carousel />
+      {/* <Carousel /> */}
     </div>
   );
 };

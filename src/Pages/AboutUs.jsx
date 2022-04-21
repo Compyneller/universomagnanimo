@@ -6,45 +6,43 @@ const AboutUs = () => {
     <div className="mainContainer py-5" style={{ background: "#FFEAEB" }}>
       <div className="container">
         <div className="row">
-          <div className="col-12 col-lg-6 d-flex align-items-center flex-column justify-content-center">
-            <div className="row">
-              <div className="col-6">
-                <img src={banner} className="w-100" alt="" />
-              </div>
-              <div className="col-6">
-                <img
-                  src="https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                  className="w-100"
-                  alt=""
-                />
-              </div>
-            </div>
-            <br />
-            <div className="row">
-              <div className="col-6">
-                <img
-                  src="https://images.unsplash.com/photo-1529400971008-f566de0e6dfc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                  className="w-100"
-                  alt=""
-                />
-              </div>
-              <div className="col-6">
-                <img
-                  src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                  className="w-100"
-                  alt=""
-                />
-              </div>
-            </div>
-          </div>
-          <div className="col-12 col-lg-6 ">
+          <div className="col-12  ">
             <h1 className="text-danger">About Us</h1>
             <div className="row mb-2">
               <h5 className="text-danger">
-                We keep the focus on driving results.
+                We keep the focus on driving results
               </h5>
+              <div className="row mb-4">
+                <div className="col-6">
+                  <img src={banner} className="w-100" alt="" />
+                </div>
+                <div className="col-6">
+                  <img
+                    src="https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                    className="w-100"
+                    alt=""
+                  />
+                </div>
+              </div>
+              {/* <br /> <br />
+              <div className="row">
+                <div className="col-6">
+                  <img
+                    src="https://images.unsplash.com/photo-1529400971008-f566de0e6dfc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                    className="w-100"
+                    alt=""
+                  />
+                </div>
+                <div className="col-6">
+                  <img
+                    src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                    className="w-100"
+                    alt=""
+                  />
+                </div>
+              </div> */}
             </div>
-            <h5 className="text-danger">More than just a place to work.</h5>
+            <h5 className="text-danger">More than just a place to work</h5>
             <p>
               At Universo Magnanimo, our clients are always our top priority —
               but we firmly believe in creating an environment that’s more than

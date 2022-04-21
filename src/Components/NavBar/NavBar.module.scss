@@ -31,7 +31,7 @@
                 a{
                     text-decoration: none;
                     font-weight: bold;
-                    font-size: 18px;
+                    font-size: 15px;
                 color: black;
                 background: white;
                 padding: .5rem 1rem;
@@ -47,7 +47,7 @@
                 &:hover{
                     transition: 250ms ease-in;
                     background: black;
-                    color: red;
+                    color: rgb(255, 94, 94);
                     // border-radius: 10px;
                     
                 }

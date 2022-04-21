@@ -1,0 +1,120 @@
+.navBarContainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    background: white;
+    
+    .Container{
+        width: 80%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        img{
+            height: 8vh;
+            image-rendering: auto;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+
+  /* Safari seems to support, but seems deprecated and does the same thing as the others. */
+  image-rendering: -webkit-optimize-contrast;
+        }
+        .Links{
+            display: flex;
+            width: 50% !important;
+            align-items: center;
+            justify-content: space-evenly;
+      
+                a{
+                    text-decoration: none;
+                    font-weight: bold;
+                    font-size: 18px;
+                color: black;
+                background: white;
+                padding: .5rem 1rem;
+                // border-radius: 10px;
+                transition: 250ms ease-out;
+                i{
+                    color: black !important;
+                    transition: 250ms ease-out;
+                    font-size: 30px;
+                    
+                   
+                }
+                &:hover{
+                    transition: 250ms ease-in;
+                    background: black;
+                    color: red;
+                    // border-radius: 10px;
+                    
+                }
+                &:active{
+                    transition: 250ms ease-in;
+                    background: black;
+                    color: red;
+                    // border-radius: 10px;
+                }
+                &:hover i{
+                    transition: 250ms ease-in;
+                    color: #F68C33 !important;
+                }
+            
+        }
+        
+    }
+    #hamburger{
+        display: none;
+    }
+    }
+}
+@media screen and (max-width : 1000px) {
+    .Container {
+        width: 95% !important;
+        img{
+            height: 5vh !important;
+        }
+        .Links{
+            display: none !important;
+            .socials{
+                width: 25% !important;
+                display: flex;
+                // margin-right: 2rem;
+                justify-content: space-between;
+                a{
+                    text-decoration: none;
+                    color: black;
+                    i{
+                        color: black !important;
+                        font-size: 25px !important;
+                        
+                    }
+                }
+            }
+        }
+        #hamburger{
+            display: block !important;
+            margin-right: 1rem;
+            z-index: 10;
+        }
+        .LinksActive{
+            width: 100% !important;
+            position: absolute;
+            min-height: 90vh;
+            // left: 0;
+            right: 0;
+            scroll-behavior: none;
+            z-index: 10;
+            top: 10vh;
+            background:  #F04B5B;
+
+            display: flex !important;
+            align-items: center !important;
+            justify-content: space-evenly !important;
+            flex-direction: column !important;
+        }
+    }
+    
+}

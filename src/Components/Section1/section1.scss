@@ -1,0 +1,43 @@
+.section1Container{
+    width: 100%;
+    min-height: 50vh;
+    background: #FFE5E6;
+    .section1Form{
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        padding: 1rem;
+        color: black;
+        background: white;
+        -webkit-box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.251);
+-moz-box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.251);
+box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.251);
+        form{
+            width: 100%;
+            
+            input{
+            width: 100%;
+            background: #F6F7FB;
+            border: none;
+            outline: none;
+            padding: 1rem ;
+            margin-bottom: 1rem;
+        }
+        textarea{
+            width: 100%;
+            background: #F6F7FB;
+            border: none;
+            outline: none;
+            padding: 1rem ;
+            margin-bottom: 1rem;
+        }
+
+        button{
+            border: none;
+            outline: none;
+            padding: .7rem 1.5rem;
+            color: white;
+        }
+    }
+    }
+}

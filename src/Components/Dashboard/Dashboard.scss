@@ -1,0 +1,62 @@
+.DashboardContainer{
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-direction: column;
+    height: 85vh;
+    color: white;
+    h1{
+        margin: auto 0;
+        font-size: 60px;
+    }
+    h2{
+        font-size: 40px;
+        font-weight: 700;
+    }
+    img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        object-fit: cover;
+        image-rendering: auto;
+        image-rendering: crisp-edges;
+        image-rendering: pixelated;
+        height: 85vh;
+        filter: brightness(.5);
+
+        /* Safari seems to support, but seems deprecated and does the same thing as the others. */
+        image-rendering: -webkit-optimize-contrast;
+        z-index: -1;
+    }
+    .emailContainer{
+        
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 2.5rem 3rem;
+        color: #ED1E26;
+        a{
+            text-decoration: none;
+            color: #ED1E26;
+        }
+    }
+    
+}
+
+@media screen and (max-width : 1000px) {
+    .DashboardContainer{
+
+        h1{
+            font-size: 35px !important;
+            
+        }
+        h2{
+            font-size: 17px !important;
+        }
+    } 
+    
+}

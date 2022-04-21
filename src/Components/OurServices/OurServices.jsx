@@ -92,7 +92,7 @@ const OurServices = () => {
             <div className="row">
               <div className="col-2">{/* <img src={fifth} alt="" /> */}</div>
               <div className="col-10">
-                <h5>Foreign Exchange ( Coming soon - launching in 2023 )</h5>
+                <h5>Foreign Exchange (Launching in 2023)</h5>
               </div>
             </div>
           </div>

@@ -110,7 +110,7 @@ const Services = () => {
             <div className="card" style={{ width: "100%" }}>
               <div className="card-body">
                 <h5 className="card-title text-danger">
-                  Foreign Exchange ( Coming soon - launching in 2023 )
+                  Foreign Exchange (Launching in 2023)
                 </h5>
                 <ul>
                   <li>Foreign Currency.</li>

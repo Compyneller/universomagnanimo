@@ -6,12 +6,16 @@ const Dashboard = () => {
   return (
     <div className="DashboardContainer">
       <img src={banner} alt="banner" />
-      <div className="my-auto container">
-        <h1>We are waiting for your ideas to make you a digital expert </h1>
-        <p>
+      <div className="my-auto w-75 text-center ">
+        <h1>
+          We are waiting for your ideas to make you a <br /> digital expert.{" "}
+        </h1>
+        <br />
+        <p style={{ fontSize: "22px" }}>
           We craft digital products that solve business needs and drive market
-          differentiation. Our team provides end-to-end solutions, full-stack
-          development, strategy, design, and valuable marketing services.
+          differentiation. Our team provides <br /> end-to-end solutions,
+          full-stack development, strategy, design, and valuable marketing
+          services.
         </p>
       </div>
       <div className="container">

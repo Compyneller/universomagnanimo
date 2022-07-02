@@ -2,8 +2,11 @@ import React from "react";
 import "./footer.scss";
 import banner from "../../Assets/banner.jpg";
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { Data } from "../../Context/DataContext";
 
 const Footer = () => {
+  const { homepage } = useContext(Data);
   return (
     <div className="FooterContainer">
       <img src={banner} alt="" />
@@ -11,7 +14,7 @@ const Footer = () => {
         <div className="footerBox">
           <div className="row">
             <div className="col-12 col-lg-10">
-              <h1>Get A Free Online Quote In Under 24 Hours</h1>
+              <h1>{homepage?.data?.footer?.text_banner?.text}</h1>
             </div>
             <div className="col-12 col-lg-2">
               <Link to="/contact">Start Quote</Link>
@@ -30,7 +33,7 @@ const Footer = () => {
           <div className="col-4 col-lg-2">
             <a
               style={{ color: "white", fontSize: "40px" }}
-              href="https://www.linkedin.com/company/universo-magnanimo-unipessoal-lda/"
+              href={homepage?.data?.footer?.linkedin}
               target="_blank"
             >
               <i className="fa-brands fa-linkedin" />
@@ -39,7 +42,7 @@ const Footer = () => {
           <div className="col-4 col-lg-2">
             <a
               style={{ color: "white", fontSize: "40px" }}
-              href="https://twitter.com/UniversoMagnan1"
+              href={homepage?.data?.footer?.twitter}
               target="_blank"
             >
               <i className="fa-brands fa-twitter" />
@@ -48,7 +51,7 @@ const Footer = () => {
           <div className="col-4 col-lg-2">
             <a
               style={{ color: "white", fontSize: "40px" }}
-              href="https://medium.com/me/stories/public"
+              href={homepage?.data?.footer?.medium}
               target="_blank"
             >
               <i className="fa-brands fa-medium"></i>

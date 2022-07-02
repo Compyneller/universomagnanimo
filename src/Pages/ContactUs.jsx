@@ -1,13 +1,16 @@
 import React from "react";
+import { useContext } from "react";
+import { Data } from "../Context/DataContext";
 
 const ContactUs = () => {
+  const { contact } = useContext(Data);
   return (
     <div style={{ background: "#FFEAEB", padding: "5rem 0" }}>
       <div className="container">
         <div className="row">
           <div className="col-12 d-flex flex-column justify-content-center emailAddress">
-            <h3>LET’S TALK</h3>
-            <h1>Speak With Expert Team.</h1>
+            <h3>{contact?.data?.sub_heading}</h3>
+            <h1>{contact?.data?.heading}</h1>
             <div className="row">
               <div className="col-12">
                 <div className="row">
@@ -38,9 +41,7 @@ const ContactUs = () => {
                   </div>
                   <div className="col-10">
                     <h5>
-                      <span> Address -</span> Praceta Sebastião da Gama, nº 3,
-                      3º ESQ, Massamá District: Lisbon Municipality: Sintra
-                      Parish: Massamá and Monte Abraão 2745 837 Queluz
+                      <span> Address -</span> {contact?.data?.address}
                     </h5>
                   </div>
                 </div>

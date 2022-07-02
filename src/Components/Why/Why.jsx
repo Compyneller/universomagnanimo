@@ -1,6 +1,9 @@
 import React from "react";
+import { useContext } from "react";
+import { Data } from "../../Context/DataContext";
 
 const Why = () => {
+  const { homepage } = useContext(Data);
   return (
     <div
       className="whyContainer text-light d-flex align-items-center w-100"
@@ -8,14 +11,8 @@ const Why = () => {
     >
       <div className="container ">
         <div className="whyContainer">
-          <h1>Why Choose Us</h1>
-          <p>
-            The web is our passion, and we're passionate about helping
-            businesses reach their goals. So when you choose Universo Magnanimo
-            as your digital marketing agency, you won’t get a cookie-cutter
-            strategy — you’ll get a custom plan that fits your company, your
-            needs, and your goals.
-          </p>
+          <h1>{homepage?.data?.why?.heading}</h1>
+          <p>{homepage?.data?.why?.text}</p>
         </div>
       </div>
     </div>
